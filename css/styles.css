@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  outline: none;
 }
 
 .container {
@@ -147,6 +148,7 @@
   align-items: center;
   justify-content: center;
   margin-left: 37px;
+  border: 1px solid transparent;
 }
 .top .top_items .top_right_items .top_my_account .top_myaccount_head {
   color: #ffffff;
@@ -160,6 +162,16 @@
 .top .top_items .top_right_items .top_my_account .myaccount_down {
   margin-left: 8px;
   color: white;
+}
+.top .top_items .top_right_items .top_my_account:hover {
+  background-color: white;
+  border: 1px solid #f16d7f;
+}
+.top .top_items .top_right_items .top_my_account:hover .top_myaccount_head {
+  color: #f16d7f;
+}
+.top .top_items .top_right_items .top_my_account:hover .myaccount_down {
+  color: #f16d7f;
 }
 
 .top_menu {
@@ -182,6 +194,7 @@
   justify-content: space-between;
 }
 .top_menu .top_nav_menu .nav_item .nav_item_link {
+  display: block;
   padding: 16px 16px;
   text-decoration: none;
   color: #222222;

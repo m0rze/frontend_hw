@@ -4,6 +4,7 @@ $width: 1140px;
 * {
   margin: 0;
   padding: 0;
+  outline: none;
 }
 
 .container {
@@ -164,6 +165,7 @@ $width: 1140px;
         align-items: center;
         justify-content: center;
         margin-left: 37px;
+        border: 1px solid transparent;
 
         .top_myaccount_head {
           color: #ffffff;
@@ -179,6 +181,19 @@ $width: 1140px;
           margin-left: 8px;
           color: white;
         }
+      }
+
+      .top_my_account:hover {
+        background-color: white;
+        border: 1px solid #f16d7f;
+      }
+
+      .top_my_account:hover .top_myaccount_head{
+        color: #f16d7f;
+      }
+
+      .top_my_account:hover .myaccount_down{
+        color: #f16d7f;
       }
     }
   }
@@ -206,6 +221,7 @@ $width: 1140px;
 
     .nav_item {
       .nav_item_link {
+        display: block;
         padding: 16px 16px;
         text-decoration: none;
         color: #222222;
