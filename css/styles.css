@@ -182,6 +182,7 @@
   justify-content: space-between;
 }
 .top_menu .top_nav_menu .nav_item .nav_item_link {
+  padding: 16px 16px;
   text-decoration: none;
   color: #222222;
   font-family: Lato, sans-serif;
@@ -247,18 +248,18 @@
 }
 .deals .deals_left {
   width: 560px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .deals .deals_left .deals_left_top {
-  height: 542px;
-}
-.deals .deals_left .deals_left_top .deals_left_top_image {
-  position: absolute;
+  position: relative;
 }
 .deals .deals_left .deals_left_top .deals_left_top_head {
   width: 175px;
   height: 82px;
   background-color: #ffffff;
-  position: relative;
+  position: absolute;
   top: 26px;
   display: flex;
   flex-direction: column;
@@ -266,21 +267,19 @@
   align-items: flex-start;
 }
 .deals .deals_left .deals_left_bottom {
-  height: 262px;
-  width: 100%;
   background-color: #dadad2;
   margin-top: 20px;
+  position: relative;
 }
 .deals .deals_left .deals_left_bottom .deals_left_bottom_image {
-  position: absolute;
   padding-left: 149px;
-  padding-bottom: 20px;
+  padding-bottom: 17px;
 }
 .deals .deals_left .deals_left_bottom .deals_left_bottom_head {
   width: 235px;
   height: 82px;
   background-color: #ffffff;
-  position: relative;
+  position: absolute;
   top: 26px;
   display: flex;
   flex-direction: column;
@@ -293,13 +292,10 @@
   flex-direction: column;
 }
 .deals .deals_right .deals_right_top {
-  height: 261px;
-}
-.deals .deals_right .deals_right_top .deals_right_top_image {
-  position: absolute;
+  position: relative;
 }
 .deals .deals_right .deals_right_top .deals_right_top_head {
-  position: relative;
+  position: absolute;
   top: 20px;
   width: 162px;
   height: 82px;
@@ -309,12 +305,12 @@
   justify-content: center;
   align-items: flex-start;
 }
-.deals .deals_right .deals_right_bottom_image {
-  margin-top: 20px;
-  position: absolute;
-}
-.deals .deals_right .deals_right_bottom_head {
+.deals .deals_right .deals_right_bottom {
   position: relative;
+  margin-top: 19px;
+}
+.deals .deals_right .deals_right_bottom .deals_right_bottom_head {
+  position: absolute;
   top: 40px;
   width: 180px;
   height: 82px;
