@@ -47,6 +47,10 @@ $width: 1140px;
     line-height: 28px;
     letter-spacing: 0.35px;
   }
+
+  .menu_element_link:hover {
+    color: #f16d7f;
+  }
 }
 .menu_element:last-of-type{
   padding-bottom: 16px;
@@ -145,6 +149,7 @@ $width: 1140px;
             letter-spacing: normal;
             line-height: 32px;
             text-align: center;
+            margin-top: 2px;
 
             .fa-caret-down {
               margin-left: 8px;
@@ -168,6 +173,14 @@ $width: 1140px;
           }
         }
 
+        .top_browse_button:hover .top_search_browse_head {
+          color: #f16d7f;
+        }
+
+        .top_browse_button:hover .fa-caret-down {
+          color: #f16d7f;
+        }
+
         .top_search_form {
           display: flex;
           align-items: center;
@@ -177,6 +190,7 @@ $width: 1140px;
             height: 38px;
             border: 1px solid #e6e6e6;
             background-color: #ffffff;
+            padding-left: 16px;
           }
 
           .top_search_input::placeholder {
@@ -187,7 +201,6 @@ $width: 1140px;
             font-style: normal;
             letter-spacing: normal;
             line-height: 32px;
-            padding-left: 16px;
           }
 
           .top_search_button {
@@ -324,6 +337,9 @@ $width: 1140px;
 
   .nav_item:hover .main_nav_box {
     display: flex;
+  }
+  .nav_item:hover .nav_item_link {
+    color: #f16d7f;
   }
 
 
