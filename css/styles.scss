@@ -98,7 +98,6 @@ $width: 1140px;
       font-weight: 400;
       font-style: normal;
       letter-spacing: 0.68px;
-      line-height: normal;
     }
   }
 
@@ -1108,6 +1107,361 @@ $width: 1140px;
 
     }
 
+  }
+
+}
+
+// item.html
+
+.page_head {
+  width: 100%;
+  height: 148px;
+  background-color: #f8f3f4;
+
+  .page_head_content {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .page_head_title {
+      color: #f16d7f;
+      font-family: "Lato - Black", sans-serif;
+      font-size: 24px;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: 20px;
+      text-transform: uppercase;
+    }
+    .breadcrumbs {
+      display: flex;
+      font-family: Lato, sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: 20px;
+      text-transform: uppercase;
+
+      .breadcrumbs_link {
+        text-decoration: none;
+        color: #636363;
+      }
+      .current_breadcrumb {
+        color: #f16d7f;
+      }
+
+      .breadcrumbs_slash {
+        margin-left: 3px;
+        margin-right: 3px;
+        color: #636363;
+      }
+    }
+  }
+}
+
+.product_photos {
+  width: 100%;
+  height: 777px;
+  border: 1px solid #eaeaea;
+  background-color: #f7f7f7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: -70px;
+
+  .product_img {
+    display: block;
+    z-index: 0;
+    position: relative;
+  }
+  .slider_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 47px;
+    height: 47px;
+    background-color: #d3d2d2;
+    cursor: pointer;
+    border: 1px solid transparent;
+
+    .slider_arrow {
+      color: #ffffff;
+      font-size: 24px;
+    }
+  }
+
+  .slider_button:hover .slider_arrow {
+    color: #f16d7f;
+  }
+}
+.settings_divider {
+  margin-top: 37px;
+  margin-bottom: 37px;
+  border-top: 1px solid #eaeaea;
+  background-color: #eaeaea;
+}
+.product_settings {
+  position: relative;
+  height: 730px;
+  border: 1px solid #eaeaea;
+  background-color: #ffffff;
+  z-index: 2;
+  margin-bottom: 119px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  padding: 73px 261px 122px 261px;
+  .product_settings_heading{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .cat_name {
+      color: #f16d7f;
+      font-family: Lato, sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      font-style: normal;
+      letter-spacing: normal;
+      text-transform: uppercase;
+    }
+    .slider_indicators {
+      margin-top: 15px;
+      margin-bottom: 17px;
+      display: flex;
+      justify-content: center;
+      .slider_indicator {
+        width: 63px;
+        height: 1px;
+        background-color: #eaeaea;
+        border: 1px solid #eaeaea;
+        cursor: pointer;
+      }
+      .active_slider {
+        background-color: #ef5b70;
+        border: 1px solid #ef5b70;
+      }
+    }
+
+    .product_brand {
+      font-family: "Lato - Black", sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      font-style: normal;
+      letter-spacing: normal;
+      text-transform: uppercase;
+    }
+  }
+  .product_desc {
+    margin-top: 67px;
+    display: flex;
+    flex-direction: column;
+
+    .desc_text {
+      color: #5e5e5e;
+      font-family: Lato, sans-serif;
+      font-size: 14px;
+      font-weight: 300;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: 24px;
+      text-align: center;
+    }
+    .desc_info {
+      margin-top: 28px;
+      display: flex;
+      justify-content: center;
+
+      .product_desc_info {
+        color: #b9b9b9;
+        font-family: Lato, sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        line-height: 24px;
+        text-transform: uppercase;
+        margin-right: 44px;
+
+        .info_name {
+          color: #2f2f2f;
+        }
+      }
+      .product_desc_info:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .product_price {
+    margin-top: 37px;
+    color: #ef5b70;
+    font-family: Lato, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .add_to_card {
+    width: 537px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    .settings_selectors {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      .setting_options {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .option_label {
+          width: 100%;
+          margin-bottom: 16px;
+          color: #2f2f2f;
+          font-family: Lato, sans-serif;
+          font-size: 14px;
+          font-weight: 700;
+          font-style: normal;
+          letter-spacing: normal;
+          text-transform: uppercase;
+        }
+        .sett_sel_opt {
+          display: block;
+          width: 144px;
+          height: 35px;
+          border: 1px solid #eaeaea;
+          background-color: #ffffff;
+          color: #bcbcbc;
+          cursor: pointer;
+
+          .select_summary {
+            box-sizing: border-box;
+            padding-right: 9px;
+            width: 100%;
+            height: 100%;
+            user-select: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .fa-chevron-down {
+              font-size: 14px;
+              font-style: normal;
+              letter-spacing: normal;
+              line-height: 24px;
+            }
+
+          }
+          .summary_info {
+            padding-left: 14px;
+            display: flex;
+            align-items: center;
+            margin-top: 4px;
+            margin-bottom: 4px;
+            .color_red {
+              justify-self: flex-start;
+              width: 12px;
+              height: 12px;
+              background-color: red;
+              margin-right: 11px;
+            }
+
+            .color_blue {
+              justify-self: flex-start;
+              width: 12px;
+              height: 12px;
+              background-color: blue;
+              margin-right: 11px;
+            }
+            .color_text {
+
+            }
+          }
+          .select_summary:before {
+            content: '';
+            display: none;
+          }
+
+          .details_options {
+            width: 100%;
+
+            box-sizing: border-box;
+            background-color: white;
+            border: 1px solid #eaeaea;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            z-index: 1;
+          }
+
+          .detailed:hover {
+            background-color: #f6f5f5;
+          }
+
+        }
+        .sett_sel_opt:hover .select_summary{
+          color: #f16d7f;
+          border: 1px solid #f16d7f;
+        }
+
+        #quantity {
+          display: block;
+          padding-left: 14px;
+          box-sizing: border-box;
+          cursor: text;
+          border: 1px solid #eaeaea;
+        }
+
+        #quantity:hover {
+          border: 1px solid #f16d7f;
+        }
+      }
+    }
+
+    .add_to_card_button {
+      z-index: 0;
+      position: relative;
+      margin-top: 28px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 55px;
+      border: 1px solid #ef5b70;
+      background-color: #ffffff;
+
+      color: #ef5b70;
+      font-family: Lato, sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      font-style: normal;
+      letter-spacing: normal;
+      line-height: normal;
+      text-align: left;
+      cursor: pointer;
+
+      .add_text {
+        margin-left: 15px;
+      }
+    }
+    .add_to_card_button:hover {
+      color: #ffffff;
+      border: 1px solid #ffffff;
+      background-color: #ef5b70;
+    }
   }
 
 }

@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <script src="https://kit.fontawesome.com/c99b316b37.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="./css/styles.css">
     <title>Item - Brand Shop</title>
 </head>
@@ -23,7 +24,8 @@
                     </div>
                     <div class="top_search">
                         <details class="top_browse_button">
-                            <summary class="top_search_browse_head">Browse<i class="fa-solid fa-caret-down"></i></summary>
+                            <summary class="top_search_browse_head">Browse<i class="fa-solid fa-caret-down"></i>
+                            </summary>
                             <div class="browse_list">
                                 <div class="menu_element">
                                     <h4 class="menu_item_head">Woman</h4>
@@ -223,6 +225,116 @@
         </div>
     </div>
 </nav>
+<header class="page_head">
+    <div class="container page_head_content">
+        <h4 class="page_head_title">
+            New arrivals
+        </h4>
+        <div class="breadcrumbs">
+            <a href="index.html" class="breadcrumbs_link">Home</a>
+            <span class="breadcrumbs_slash">/</span>
+            <a href="#cat" class="breadcrumbs_link">Men</a>
+            <span class="breadcrumbs_slash">/</span>
+            <h4 class="current_breadcrumb">New arrivals</h4>
+        </div>
+    </div>
+</header>
+
+<section class="product_data">
+    <div class="product_photos">
+        <button class="slider_button">
+            <i class="fa-solid fa-angle-left slider_arrow"></i>
+        </button>
+        <img src="images/product_example.png" alt="Product" class="product_img">
+        <button class="slider_button">
+            <i class="fa-solid fa-angle-right slider_arrow"></i>
+        </button>
+    </div>
+    <div class="container product_settings">
+        <div class="product_settings_heading">
+            <div class="cat_name">
+                WOMEN COLLECTION
+            </div>
+            <div class="slider_indicators">
+                <div class="slider_indicator"></div>
+                <div class="slider_indicator active_slider"></div>
+                <div class="slider_indicator"></div>
+            </div>
+            <div class="product_brand">
+                Moschino Cheap And Chic
+            </div>
+        </div>
+        <div class="product_desc">
+            <p class="desc_text">
+                Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate
+                collaborative architectures before cutting-edge services. Completely visualize parallel core
+                competencies rather than exceptional portals.
+            </p>
+            <div class="desc_info">
+                <div class="product_desc_info">Material: <span class="info_name">Cotton</span></div>
+                <div class="product_desc_info">Designer: <span class="info_name">Cotton</span></div>
+            </div>
+        </div>
+        <div class="product_price">
+            $561
+        </div>
+        <div class="settings_divider"></div>
+        <form action="#add" class="add_to_card">
+            <div class="settings_selectors">
+                <div class="setting_options">
+                    <label for="color" class="option_label">CHOOSE COLOR</label>
+                    <details id="color" class="sett_sel_opt">
+                        <summary class="select_summary">
+                            <div class="summary_info">
+                                <div class="color_red"></div>
+                                <div class="color_text">Red</div>
+                            </div>
+                            <i class="fa fa-solid fa-chevron-down"></i>
+                        </summary>
+                        <div class="details_options">
+                            <div class="summary_info detailed">
+                                <div class="color_blue"></div>
+                                <div class="color_text">Blue</div>
+                            </div>
+                            <div class="summary_info detailed">
+                                <div class="color_red"></div>
+                                <div class="color_text">Red</div>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+                <div class="setting_options">
+                    <label for="size" class="option_label">CHOOSE SIZE</label>
+                    <details id="size" class="sett_sel_opt">
+                        <summary class="select_summary">
+                            <div class="summary_info">
+                                <div class="size_text">XXL</div>
+                            </div>
+                            <i class="fa fa-solid fa-chevron-down"></i>
+                        </summary>
+                        <div class="details_options">
+                            <div class="summary_info detailed">
+                                <div class="size_text">XL</div>
+                            </div>
+                            <div class="summary_info detailed">
+                                <div class="size_text">L</div>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+                <div class="setting_options">
+                    <label for="quantity" class="option_label">QUANTITY</label>
+                    <input id="quantity" value="1" max="9" name="quantity" type="number" class="sett_sel_opt">
+                </div>
+
+            </div>
+            <button type="submit" class="add_to_card_button">
+                <i class="fa fa-solid fa-basket-shopping"></i>
+                <span class="add_text">Add to card</span>
+            </button>
+        </form>
+    </div>
+</section>
 
 <footer>
     <div class="footer_top_big">
@@ -337,5 +449,13 @@
         </div>
     </div>
 </footer>
+<script>
+    let selectedDetail = $(".sett_sel_opt");
+    $(".detailed", selectedDetail).click(function () {
+        let summary = this.closest(".sett_sel_opt");
+        $(".select_summary .summary_info", summary).html(this.innerHTML);
+        $(".sett_sel_opt").removeAttr("open");
+    });
+</script>
 </body>
 </html>
