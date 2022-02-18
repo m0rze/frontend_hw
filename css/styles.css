@@ -932,6 +932,9 @@
   letter-spacing: 0.4px;
   line-height: 42px;
 }
+.footer_bottom .footer_bottom_right .footer_bottom_menu_box .footer_nav_link:hover {
+  color: #f16d7f;
+}
 
 .copyright {
   height: 79px;
