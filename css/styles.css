@@ -205,6 +205,10 @@
   justify-content: space-around;
   align-items: center;
 }
+.top .top_items .top_right_items .basket_link {
+  display: block;
+  text-decoration: none;
+}
 .top .top_items .top_right_items .top_basket {
   cursor: pointer;
   width: 32px;
