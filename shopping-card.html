@@ -281,13 +281,13 @@
         <h4 class="page_head_title">
             New arrivals
         </h4>
-        <div class="breadcrumbs">
+        <nav class="breadcrumbs">
             <a href="index.html" class="breadcrumbs_link">Home</a>
             <span class="breadcrumbs_slash">/</span>
             <a href="#cat" class="breadcrumbs_link">Men</a>
             <span class="breadcrumbs_slash">/</span>
             <h4 class="current_breadcrumb">New arrivals</h4>
-        </div>
+        </nav>
     </div>
 </header>
 <section class="shopping-card">
@@ -315,7 +315,7 @@
                     </div>
                 </div>
                 <div class="unite-price">$150</div>
-                <div class="quantity"><input type="text" class="quantity-val" value="1"></div>
+                <div class="quantity"><input type="number" min="1" max="9" class="quantity-val" value="1"></div>
                 <div class="shipping">free</div>
                 <div class="unite-price">$150</div>
                 <div class="action"><i class="fa fa-solid fa-circle-minus"></i></div>
@@ -334,7 +334,7 @@
                     </div>
                 </div>
                 <div class="unite-price">$170</div>
-                <div class="quantity"><input type="text" class="quantity-val" value="2"></div>
+                <div class="quantity"><input type="number" min="1" max="9" class="quantity-val" value="2"></div>
                 <div class="shipping">free</div>
                 <div class="unite-price">$340</div>
                 <div class="action"><i class="fa fa-solid fa-circle-minus"></i></div>
@@ -353,7 +353,7 @@
                     </div>
                 </div>
                 <div class="unite-price">$100</div>
-                <div class="quantity"><input type="text" class="quantity-val" value="3"></div>
+                <div class="quantity"><input type="number" min="1" max="9" class="quantity-val" value="3"></div>
                 <div class="shipping">free</div>
                 <div class="unite-price">$300</div>
                 <div class="action"><i class="fa fa-solid fa-circle-minus"></i></div>
@@ -361,12 +361,12 @@
         </div>
         <div class="card-buttons">
             <button class="card-button">cLEAR SHOPPING CART</button>
-            <button class="card-button">cONTINUE sHOPPING</button>
+            <a href="index.html" class="card-button">cONTINUE sHOPPING</a>
         </div>
     </div>
 </section>
 <section>
-    <div class="container checkout">
+    <form action="#" class="container checkout">
         <div class="checkout-sections">
             <p class="checkout-heads">Shipping Adress</p>
             <details id="color" class="sett_sel_opt">
@@ -387,14 +387,14 @@
             </details>
             <input type="text" class="state" placeholder="State">
             <input type="text" class="postcode" placeholder="Postcode / Zip">
-            <button class="apply-button">get a quote</button>
+            <button type="submit" class="apply-button">get a quote</button>
         </div>
 
         <div class="checkout-sections">
             <p class="checkout-heads">coupon  discount</p>
             <p class="coupon-text">Enter your coupon code if you have one</p>
-            <input type="text" class="state" placeholder="State">
-            <button class="apply-button">Apply coupon</button>
+            <input type="text" class="state" placeholder="Coupon">
+            <button type="submit" class="apply-button">Apply coupon</button>
         </div>
 
         <div class="checkout-sections checkout-sections__heighten checkout-sections_colorized">
@@ -404,9 +404,9 @@
             </div>
             <div class="checkout-heads grand-total">GRAND TOTAL <span class="grand-total__margin grand-total_colorized">$900</span></div>
             <div class="total-divider"></div>
-            <button class="proceed-button">proceed to checkout</button>
+            <a href="checkout.html" class="proceed-button">proceed to checkout</a>
         </div>
-    </div>
+    </form>
 
 </section>
 <footer>
@@ -502,7 +502,7 @@
     <div class="copyright">
         <div class="container copyright_items">
             <div class="copyright_text">&copy; 2022 Brand All Rights Reserved.</div>
-            <div class="social_icons">
+            <nav class="social_icons">
                 <a href="#" class="social_item">
                     <i class="fa fa-brands fa-facebook"></i>
                 </a>
@@ -518,7 +518,7 @@
                 <a href="#" class="social_item">
                     <i class="fa fa-brands fa-google-plus"></i>
                 </a>
-            </div>
+            </nav>
         </div>
     </div>
 </footer>
