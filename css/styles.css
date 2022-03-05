@@ -145,6 +145,9 @@
   margin-left: 8px;
   color: #838383;
 }
+.top .top_items .top_left_items .top_search .top_browse_button .top_search_browse_head::-webkit-details-marker {
+  display: none;
+}
 .top .top_items .top_left_items .top_search .top_browse_button .top_search_browse_head:before {
   content: "";
 }
@@ -1386,6 +1389,9 @@
   content: "";
   display: none;
 }
+.sett_sel_opt .select_summary::-webkit-details-marker {
+  display: none;
+}
 .sett_sel_opt .details_options {
   width: 100%;
   box-sizing: border-box;
@@ -2141,6 +2147,10 @@
   width: 100%;
 }
 
+.select_summary {
+  width: 100%;
+}
+
 .country {
   color: #b1b1b1;
   font-family: Lato, sans-serif;
@@ -2159,6 +2169,7 @@
   border: 1px solid #eaeaea;
   background-color: #ffffff;
   padding-left: 17px;
+  box-sizing: border-box;
 }
 
 .state::placeholder, .postcode::placeholder {
@@ -2276,6 +2287,9 @@
 }
 .checkout-details .checkout-summary:before {
   content: "";
+}
+.checkout-details .checkout-summary::-webkit-details-marker {
+  display: none;
 }
 .checkout-details .checkout-content {
   box-sizing: border-box;

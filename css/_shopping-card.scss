@@ -271,6 +271,9 @@
   margin-top: 22px;
   width: 100%;
 }
+.select_summary {
+  width: 100%;
+}
 
 .country {
   color: #b1b1b1;
@@ -289,6 +292,7 @@
   border: 1px solid #eaeaea;
   background-color: #ffffff;
   padding-left: 17px;
+  box-sizing: border-box;
 }
 
 .state::placeholder, .postcode::placeholder {

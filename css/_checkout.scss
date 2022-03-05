@@ -25,6 +25,9 @@
   .checkout-summary:before {
     content: '';
   }
+  .checkout-summary::-webkit-details-marker{
+    display: none;
+  }
   .checkout-content {
     box-sizing: border-box;
     display: flex;
