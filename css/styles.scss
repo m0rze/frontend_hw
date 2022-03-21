@@ -538,6 +538,10 @@ $width: 1140px;
 
   .deal_link {
     display: block;
+    opacity: 0.5;
+  }
+  .deal_link:hover {
+    opacity: 1;
   }
   .deals_left {
     width: 560px;
@@ -570,6 +574,7 @@ $width: 1140px;
       .deals_left_bottom_image {
         padding-left: 149px;
         padding-bottom: 17px;
+        height: 100%;
       }
 
       .deals_left_bottom_head {
@@ -938,7 +943,9 @@ $width: 1140px;
     width: 100%;
     background-image: url("../images/footer_top_background.png");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
+    background-size: cover;
+    z-index: 0;
 
     .footer_top_items {
       width: 100%;

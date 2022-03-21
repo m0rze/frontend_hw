@@ -487,6 +487,10 @@
 }
 .deals .deal_link {
   display: block;
+  opacity: 0.5;
+}
+.deals .deal_link:hover {
+  opacity: 1;
 }
 .deals .deals_left {
   width: 560px;
@@ -516,6 +520,7 @@
 .deals .deals_left .deals_left_bottom .deals_left_bottom_image {
   padding-left: 149px;
   padding-bottom: 17px;
+  height: 100%;
 }
 .deals .deals_left .deals_left_bottom .deals_left_bottom_head {
   width: 235px;
@@ -845,7 +850,9 @@
   width: 100%;
   background-image: url("../images/footer_top_background.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
+  background-size: cover;
+  z-index: 0;
 }
 .footer_top_big .footer_top .footer_top_items {
   width: 100%;
